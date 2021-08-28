@@ -8,7 +8,6 @@ import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.matcher.PreferenceMatchers.withKey
 import androidx.test.espresso.matcher.ViewMatchers.withId
 import androidx.test.espresso.matcher.ViewMatchers.withText
-import androidx.preference.R.attr.summary
 import com.example.android.architecture.blueprints.todoapp.R.string.settings_title
 import com.example.android.architecture.blueprints.todoapp.test.BaseTest
 import com.example.android.architecture.blueprints.todoapp.test.chapter3.*
