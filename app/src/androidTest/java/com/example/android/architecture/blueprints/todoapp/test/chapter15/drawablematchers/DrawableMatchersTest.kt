@@ -24,7 +24,7 @@ class DrawableMatchersTest : BaseTest() {
     }
 
     private fun getMenuIconDrawable(): Drawable? {
-        val drawableId = com.example.android.architecture.blueprints.todoapp.mock.test
+        val drawableId = com.example.android.architecture.blueprints.todoapp.test
                 .R.drawable.test_logo
         return InstrumentationRegistry.getInstrumentation().context.getDrawable(drawableId)
     }

@@ -16,8 +16,8 @@ import org.hamcrest.core.AllOf.allOf
  */
 class ToDoDetailsScreen {
 
-    private val taskMarkedCompleteText = getStringFromTestResource(com.example.android.architecture.blueprints.todoapp.mock.test.R.string.task_marked_complete)
-    private val taskMarkedActiveText = getStringFromTestResource(com.example.android.architecture.blueprints.todoapp.mock.test.R.string.task_marked_active)
+    private val taskMarkedCompleteText = getStringFromTestResource(R.string.task_marked_complete)
+    private val taskMarkedActiveText = getStringFromTestResource(R.string.task_marked_active)
     private val taskDescription = onView(withId(R.id.task_detail_description))
     private val taskTitle = onView(withId(R.id.task_detail_title))
     private val completeTaskCheckbox = onView(withId(R.id.task_detail_complete))
