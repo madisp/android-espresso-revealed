@@ -1,6 +1,6 @@
 package com.example.android.architecture.blueprints.todoapp.test.chapter4.idlingresources
 
-import android.support.test.espresso.IdlingResource
+import androidx.test.espresso.IdlingResource
 import okhttp3.OkHttpClient
 
 /**
@@ -15,7 +15,7 @@ class OkHttp3IdlingResource(private val client: OkHttpClient) : IdlingResource {
     override fun getName() = name
 
     override fun isIdleNow(): Boolean {
-        if (client.dispatcher().runningCallsCount() == 0) {
+        if (client.dispatcher.runningCallsCount() == 0) {
             callback.onTransitionToIdle()
             return true
         }

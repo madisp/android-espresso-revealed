@@ -1,11 +1,10 @@
 package com.example.android.architecture.blueprints.todoapp.test.helpers
 
-import android.support.test.InstrumentationRegistry
-import android.support.test.InstrumentationRegistry.getInstrumentation
-import android.support.test.runner.lifecycle.ActivityLifecycleMonitorRegistry
-import android.support.test.runner.lifecycle.Stage
-import android.support.test.runner.lifecycle.Stage.RESUMED
-import android.support.v4.app.FragmentActivity
+import androidx.test.platform.app.InstrumentationRegistry.getInstrumentation
+import androidx.test.runner.lifecycle.ActivityLifecycleMonitorRegistry
+import androidx.test.runner.lifecycle.Stage
+import androidx.test.runner.lifecycle.Stage.RESUMED
+import androidx.fragment.app.FragmentActivity
 
 
 object Utils {
@@ -26,8 +25,8 @@ object Utils {
      * @return Text representation of String resource
      */
     fun getStringFromTestResource(resourceId: Int): String {
-        return InstrumentationRegistry
-                .getContext()
+        return getInstrumentation()
+                .context
                 .resources
                 .getString(resourceId)
     }
