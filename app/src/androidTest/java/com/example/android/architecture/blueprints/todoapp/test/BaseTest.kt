@@ -16,7 +16,7 @@ import org.junit.rules.TestName
 import org.junit.runner.RunWith
 
 @RunWith(AndroidJUnit4::class)
-open class BaseTest {
+abstract class BaseTest {
 
     /**
      * Provided activity will be launched before each test.
