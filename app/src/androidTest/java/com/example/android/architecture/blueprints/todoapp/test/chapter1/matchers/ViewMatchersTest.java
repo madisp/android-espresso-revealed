@@ -7,6 +7,7 @@ import android.widget.CheckBox;
 
 import com.example.android.architecture.blueprints.todoapp.R;
 
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
@@ -48,6 +49,7 @@ import static org.hamcrest.CoreMatchers.not;
  * Lists all ViewMatchers. ViewMatchers here are without functional load.
  * This is done for demonstration purposes.
  */
+@Ignore
 @RunWith(AndroidJUnit4.class)
 public class ViewMatchersTest {
 
