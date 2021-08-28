@@ -49,7 +49,6 @@ import static org.hamcrest.CoreMatchers.not;
  * Lists all ViewMatchers. ViewMatchers here are without functional load.
  * This is done for demonstration purposes.
  */
-@Ignore
 @RunWith(AndroidJUnit4.class)
 public class ViewMatchersTest {
 
@@ -77,6 +76,7 @@ public class ViewMatchersTest {
     }
 
     @Test
+    @Ignore("Broken test, there's no backing activity here")
     public void hierarchy() {
         onView(withParent(withId(R.id.todo_item)));
         onView(withChild(withText("item 2")));
